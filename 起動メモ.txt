@@ -1,0 +1,19 @@
+
+Jupyter Notebookが自動起動しない場合は、bashで以下コマンドを打ってください。
+# 
+
+1. Jupyter Notebookが起動しているか確認
+# jupyter notebook list
+Currently running servers:
+
+→何も表示されていなければ、起動していない。
+　起動していれば、以下のような形になる。
+# jupyter notebook list
+Currently running servers:
+http://9a4926d376c5:8888/ :: /workspaces/jupyter-notebook
+
+
+
+2. 手動でJupyter Notebookを起動
+# jupyter notebook --ip=0.0.0.0 --no-browser --allow-root --NotebookApp.token=''
+

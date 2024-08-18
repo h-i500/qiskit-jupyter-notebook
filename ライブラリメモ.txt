@@ -1,0 +1,11 @@
+
+
+＜参考＞
+https://qiita.com/trtrbohz/items/aca3cf24bb0ecd8b57b6
+
+
+Qiskit1.0.0 のリリースによりqiskitモジュールから 
+“IBMQ” “execute” ”Aer”といった旧版でよく使っていた属性が削除されてしまいました。
+※Qiskit 1.0.0 Release note
+https://github.com/Qiskit/qiskit/releases/tag/1.0.0
+
