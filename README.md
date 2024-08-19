@@ -14,7 +14,7 @@ https://code.visualstudio.com/download
 
 ・VSCodeの拡張機能で、Remote Developmentを導入する。
 
-・vscodeのsettingsを、podman用に変更する。
+・vscodeのsettingsを、podman用に変更する。<br>
   Dev › Containers: Docker Path<br>
   podman<br>
   Docker: Docker Path<br>
