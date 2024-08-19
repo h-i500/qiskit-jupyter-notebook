@@ -1,8 +1,14 @@
 # qiskit-jupyter-notebook"
 
+
+# 【説明】
+Podman Desktopで利用することを想定している為、Containerfileをプロジェクトトップに置いています。
+Containerfileは、Dockerfileと同じ使い方が可能で、Dockerからでも利用できます。
+
+
 # 【使い方】
 
-##Podman Desktop
+## Podman Desktop
 
 ・WindowsにPodman Desktopをインストールする。
 https://podman-desktop.io/downloads
