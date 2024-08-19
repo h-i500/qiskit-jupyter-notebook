@@ -1,13 +1,13 @@
-"# qiskit-jupyter-notebook" 
+# qiskit-jupyter-notebook"
 
-#【使い方】
+# 【使い方】
 
 ##Podman Desktop
 
 ・WindowsにPodman Desktopをインストールする。
 https://podman-desktop.io/downloads
 
-##VSCode
+## VSCode
 
 ・VSCodeをインストールする。
 https://code.visualstudio.com/download
@@ -22,7 +22,7 @@ https://code.visualstudio.com/download
   Dev › Containers: Docker Compose Path<br>
   podman-compose<br>
 
-##実行
+## 実行
 
 ・当プロジェクトをpull
 ・プロジェクトをvscodeで開き、Reopen in Containerで開く。
