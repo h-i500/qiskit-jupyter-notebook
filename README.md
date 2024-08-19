@@ -11,11 +11,11 @@ https://code.visualstudio.com/download
 
 ・vscodeのsettingsを、podman用に変更する。
   Dev › Containers: Docker Path
-　podman
+　→ podman
   Docker: Docker Path
-  podman
+  → podman
   Dev › Containers: Docker Compose Path
-  podman-compose
+  → podman-compose
 
 ・当プロジェクトをpull
 ・プロジェクトをvscodeで開き、Reopen in Containerで開く。
