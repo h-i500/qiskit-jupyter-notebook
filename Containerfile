@@ -1,5 +1,5 @@
 # ベースイメージとして公式のPythonイメージを使用
-FROM python:3.9-slim
+FROM python:3.12-slim
 
 # 必要なパッケージをインストール
 RUN apt-get update && apt-get install -y \
