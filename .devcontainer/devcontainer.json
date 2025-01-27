@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 {
     "name": "Jupyter Notebook Dev Container",
     "dockerFile": "../Containerfile",  // Containerfileの場所に応じて調整
@@ -13,19 +12,3 @@
     "postCreateCommand": "jupyter notebook --ip=0.0.0.0 --no-browser --allow-root --NotebookApp.token=''",  // コンテナ起動後にJupyter Notebookを起動
     "remoteUser": "root"  // rootユーザーとして実行
 }
-=======
-{
-    "name": "Jupyter Notebook Dev Container",
-    "dockerFile": "../Containerfile",  // Containerfileの場所に応じて調整
-    "extensions": [
-        "ms-python.python",
-        "ms-toolsai.jupyter"
-    ],
-    "settings": {
-        "python.pythonPath": "/opt/venv/bin/python"
-    },
-    "forwardPorts": [8888],  // 必ずポート8888をフォワード
-    "postCreateCommand": "jupyter notebook --ip=0.0.0.0 --no-browser --allow-root --NotebookApp.token=''",  // コンテナ起動後にJupyter Notebookを起動
-    "remoteUser": "root"  // rootユーザーとして実行
-}
->>>>>>> a00cd10 (修正)
