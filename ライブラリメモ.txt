@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 
 ＜参考＞
@@ -9,3 +10,50 @@ Qiskit1.0.0 のリリースによりqiskitモジュールから
 ※Qiskit 1.0.0 Release note
 https://github.com/Qiskit/qiskit/releases/tag/1.0.0
 
+=======
+
+
+＜参考＞
+https://qiita.com/trtrbohz/items/aca3cf24bb0ecd8b57b6
+
+
+Qiskit1.0.0 のリリースによりqiskitモジュールから 
+“IBMQ” “execute” ”Aer”といった旧版でよく使っていた属性が削除されてしまいました。
+※Qiskit 1.0.0 Release note
+https://github.com/Qiskit/qiskit/releases/tag/1.0.0
+
+
+
+＜旧版Qiskit＞
+1   シミュレータを準備する際に、シミュレータオブジェクト(Aer)からバックエンドオブジェクトを得る
+2   構築回路の実行時、実行関数(execute)にバックエンドオブジェクトを伝える
+
+＜新版Qiskitでは＞
+1'   qiskit_ibm_providerオブジェクトからシミュレータを指定してproviderオブジェクトを得て、このproviderオブジェクトからバックエンド情報を得る
+2'   バックエンドオブジェクトを使ってシミュレータを動かす。
+
+＜コード例＞
+宣言
+from qiskit_ibm_provider import IBMProvider
+from qiskit import QuantumCircuit, transpile
+from qiskit.visualization import plot_histogram
+
+＜回路形成＞
+circuit = QuantumCircuit(2, 2)
+circuit.h(0)
+circuit.cx(0, 1)
+circuit.measure_all()
+circuit.draw('mpl')
+
+＜実行マシン構築(今回はシミュレータ)＞
+provider = IBMProvider()
+backend = provider.get_backend("ibmq_qasm_simulator")
+
+＜回路実行＞
+transpiled_circuit = transpile(circuit, backend=backend)
+job = backend.run(transpiled_circuit)
+print(f" > Counts: {job.result().get_counts()}")
+plot_histogram(job.result().get_counts())
+
+
+>>>>>>> a00cd10 (修正)

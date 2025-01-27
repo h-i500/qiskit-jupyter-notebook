@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # qiskit-jupyter-notebook"
 
 
@@ -32,3 +33,6 @@ https://code.visualstudio.com/download
 
 ・当プロジェクトをpull
 ・プロジェクトをvscodeで開き、Reopen in Containerで開く。
+=======
+"# qiskit-jupyter-notebook" 
+>>>>>>> a00cd10 (修正)
