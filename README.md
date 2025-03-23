@@ -1,5 +1,8 @@
 # qiskit-jupyter-notebook"
 
+# License
+This project is licensed under the Apache License 2.0 - see the [LICENSE](./LICENSE) file for details.
+
 
 # 【説明】
 Podman Desktopで利用することを想定している為、Containerfileをプロジェクトトップに置いています。
