@@ -18,7 +18,8 @@ RUN pip install --upgrade pip && pip install --no-cache-dir \
     # qiskit_ibm_provider \
     qiskit-aer \
     matplotlib \
-    pylatexenc
+    pylatexenc \
+    qiskit-algorithms
 
 # ワーキングディレクトリを設定
 WORKDIR /workspace
