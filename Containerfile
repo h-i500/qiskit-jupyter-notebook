@@ -19,7 +19,9 @@ RUN pip install --upgrade pip && pip install --no-cache-dir \
     qiskit-aer \
     matplotlib \
     pylatexenc \
-    qiskit-algorithms
+    qiskit-algorithms \
+    torch \
+    torchvision
 
 # ワーキングディレクトリを設定
 WORKDIR /workspace
